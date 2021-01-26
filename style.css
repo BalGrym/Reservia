@@ -1,0 +1,103 @@
+header, main, footer
+{
+    width: 900px;
+    margin: auto;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+ 
+#logo
+ {
+     width: 75px;
+     margin-top: 15px;
+ } 
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Nav */
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li
+{
+    /* margin-right: 50px; */
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #181818;
+}
+
+nav a:hover
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 33px;
+    color: #0065FC;
+}
+
+
+/* nav */
+
+/* Fin Header */
+
+
+
+
+
+#section_hebergement
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 66%;
+}
+
+#hebergement_marseille
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hebergement
+{
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 5px
+    ;
+}
+
+.hebergement img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#section_hebergement > h2
+{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+
+
