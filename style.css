@@ -71,7 +71,11 @@ nav li
 
 .ancre_activite
 {
-    padding-top: 40px;
+    color: black;
+}
+.ancre_activite a 
+{
+    color: black;
 }
 
 .sign_up, .sign_up a
@@ -79,7 +83,13 @@ nav li
     padding:0px 20px 0px 20px;
     font-weight: bold;
     color: #0065FC;
-    margin-top: 40px;
+    margin-top: 43px;
+}
+.ancre_activite a:hover, .sign_up a:hover
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 40px;
+    color: #0065FC;
 }
 
 /* ---------nav--------- */
@@ -88,7 +98,10 @@ nav li
 
 /* ---------Main--------- */
 /* ---------Section recheche ville--------- */
-
+.recherche_ville h1
+{
+    font-size: 1.3em;
+}
 form 
 {
     border: 1px solid #f2f2f2;
@@ -96,11 +109,6 @@ form
     border-radius: 19px;
     display: flex;
     align-items: center;
-}
-
-.recherche_ville h1
-{
-    font-size: 1.3em;
 }
 
 .background_localisation
@@ -114,7 +122,6 @@ form
     border-radius: 18px 0px 0px 18px ;
 }
 
-
 .fa-map-marker-alt
 {
     font-size: 100%;
@@ -122,6 +129,7 @@ form
 
 input[type=text]
 {
+    font-family: 'Raleway';
     padding: 7px 15px;
     box-sizing: border-box;
     font-weight: bold;
@@ -165,7 +173,7 @@ input[type=text]
     background-color: #DEEBFF;
 }
 
-.filtre h1
+.filtre h2
 {
     font-size: 1.2em;
 }
@@ -195,7 +203,6 @@ input[type=text]
 {
     
     background-color: #DEEBFF;
-   /* padding: 10px 10px 10px 10px;*/
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -221,11 +228,19 @@ input[type=text]
 .fa-info
 {
     color: #0065FC;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 50%;
     width: 25px;
     height: 25px;
     text-align: center;
+    margin-right: 10px;
+}
+
+.info .fas 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -238,11 +253,11 @@ input[type=text]
     background-color: #F2F2F2;
     border-radius: 15px;
     width: 60%;
-    height: auto; /*630px*/
+    height: auto; 
     padding: 20px 20px;
 }
 
-#section_hebergement h1
+#section_hebergement h2
 {
     padding-left: 10px;
     margin-bottom: 15px;
@@ -308,6 +323,12 @@ figure:hover
     font-family: 'Raleway';
     width: auto;   
     padding: 10px;
+    font-size: 0.9em;
+}
+
+.strong
+{
+    font-weight: bold;
 }
 
 figcaption .fa-star
@@ -364,7 +385,7 @@ aside
     width: 30%;
 }
 
-aside h1
+aside h2
 {
     margin: 40px 40px 0px 40px;
     display: flex;
@@ -408,13 +429,13 @@ aside img
 
 /* ---------Activités Marseille--------- */
 
-#sectionActivite
+#section_activite
 {
     height: 500px;
     margin-top: 60px;
 }
 
-#sectionActivite h1
+#section_activite h2
 {
     font-size: 1.3em;
 }
@@ -536,7 +557,7 @@ footer
     margin-top: 60px;
 }
 
-footer h1
+footer h2
 {
     font-size: 1.3em;
     margin-top: 50px;
@@ -557,7 +578,7 @@ footer li
 
 footer div
 {
-    margin-right: 150px;
+    margin-right: 200px;
 }
 
 /* ---------Fin Footer ---------*/
@@ -571,6 +592,11 @@ footer div
         margin: 0px;
     }
 
+    .logo
+    {
+        padding-left: 15px;
+    }
+
     header, main, footer
     {
         width: 100%;
@@ -578,7 +604,7 @@ footer div
         height: 100%;
     }
 
-    h1
+    h2
     {
         font-size: 1em;
         margin-left: 15px;
@@ -617,8 +643,12 @@ footer div
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 20px;
         width: 50%;
-        align-self: center;
     }    
+
+    .ancre_activite a:hover
+    {
+        border: none;
+    }
 
     .ancre_hebergement
     {
@@ -636,11 +666,21 @@ footer div
         float: right;
     }
 
+    .sign_up a:hover
+    {
+        border: none;
+    }
+
     /* ----------Recherche ville avec Barre de recherche et Filtre---------- */
 
     .recherche_ville
     {
         padding: 15px;
+    }
+
+    .recherche_ville h1
+    {
+        margin-left: 0px;
     }
 
     form
@@ -676,6 +716,11 @@ footer div
         display: inline;
     }
 
+    .filtre h2
+    {
+        margin-left: 0px;
+    }
+
     .recherche_ville li
     {
         margin: 0px 10px 10px 0px;
@@ -700,9 +745,9 @@ footer div
         padding: 0px;
 
     }
-    #section_hebergement h1
+    #section_hebergement h2
     {
-        padding:10px;
+        margin-bottom: 0px;
     }
     
     .hebergement_marseille
@@ -723,7 +768,8 @@ footer div
 
     #section_hebergement .more
     {
-        margin-top: 0px;
+        margin-top: 10px;
+        padding-left: 20px;
     }
 
             /* ----------ASIDE---------- */
@@ -747,7 +793,7 @@ footer div
     {
         width: 40%;
     }
-    aside h1
+    aside h2
     {
         margin: 40px 15px 20px 15px;
     }
@@ -759,6 +805,11 @@ footer div
 
         /* ----------Activités---------- */
 
+    #section_activite h2
+    {
+        margin-left: 20px;
+    }
+    
     .activite_marseille a 
     {
         width: auto;
@@ -769,7 +820,7 @@ footer div
         font-size: 0.8em;
     }
 
-    #sectionActivite
+    #section_activite
     {
         height: 100%;
         margin: auto;
@@ -798,7 +849,7 @@ footer div
 
     footer
     {
-        flex-wrap: wrap;
+        flex-direction: column;
         padding-left: 0px;
     }
 
@@ -815,12 +866,22 @@ footer div
     }
 }
 
-@media (min-width: 1450px)
+@media (min-width: 1600px)
 {
     body 
     {
         width: 70%;
         margin: auto;
+    }
+
+    .hebergement figcaption
+    {
+        font-size: 0.8em;
+    }
+
+    .heb_pop figcaption
+    {
+        font-size: 0.9em;
     }
 } 
 
@@ -837,6 +898,12 @@ footer div
         width: auto;
         padding-left: 5%;
     }
+
+    .ancre_activite a:hover, .sign_up a:hover
+    {
+        border: none;
+    }
+
 
     .filtre
     {
@@ -869,7 +936,7 @@ footer div
     }
     #section_hebergement h1
     {
-        padding:10px;
+        margin-bottom: 0px;
     }
     
     .hebergement_marseille
@@ -919,7 +986,7 @@ footer div
     {
         width: 40%;
     }
-    aside h1
+    aside h2
     {
         margin: 40px 15px 20px 15px;
     }
@@ -932,7 +999,7 @@ footer div
     
     .activite_marseille a 
     {
-        width: auto;
+        width: 50%;
     }
 
     figcaption
@@ -940,21 +1007,22 @@ footer div
         font-size: 0.8em;
     }
 
-    #sectionActivite
+    #section_activite
     {
         height: 100%;
         margin: auto;
     }
-    #sectionActivite h1
+    #section_activite h2
     {
         margin-left: 20px;
     }
 
     .activite_marseille
     {
-        flex-direction: column;
         flex-wrap: wrap;
         height: auto;
+        display: flex;
+        flex-flow: row wrap;
     }
     .activite_marseille figure
     {
@@ -966,5 +1034,10 @@ footer div
     {
         width: 100%;
         height: 130px;
+    }
+
+    footer div
+    {
+        margin-right: 100px;
     }
 }
