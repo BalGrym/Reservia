@@ -31,6 +31,7 @@ header
 nav
 {
     width: 80%;
+    height: 64px; /*rajout */
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -56,24 +57,7 @@ nav li
     justify-content: center;
 }
 
-
-
-.ancre_hebergement
-{
-    border-top: 3px solid #0065FC;
-    padding-top: 40px;
-    color: #0065FC;
-}
-.ancre_hebergement a
-{
-    color: #0065FC;
-}
-
-.ancre_activite
-{
-    color: black;
-}
-.ancre_activite a 
+.ancre_activite, .ancre_activite a, .ancre_hebergement, .ancre_hebergement a
 {
     color: black;
 }
@@ -85,10 +69,15 @@ nav li
     color: #0065FC;
     margin-top: 43px;
 }
-.ancre_activite a:hover, .sign_up a:hover
+.ancre_activite:hover, .ancre_hebergement:hover
 {
     border-top: 3px solid #0065FC;
-    padding-top: 40px;
+    padding-top: 42px;
+    color: #0065FC;
+}
+
+.ancre_activite a:hover, .ancre_hebergement a:hover
+{
     color: #0065FC;
 }
 
@@ -159,8 +148,6 @@ input[type=text]
 {
     display: none;
 }
-
-
 
 .filtre
 {
@@ -638,26 +625,21 @@ footer div
         padding: 0px;
     }
 
-    .ancre_activite 
+    .ancre_activite, .ancre_hebergement
     {
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 20px;
         width: 50%;
     }    
 
-    .ancre_activite a:hover
+    .ancre_activite:hover, .ancre_hebergement:hover
     {
-        border: none;
-    }
-
-    .ancre_hebergement
-    {
+        border-top: none;
         width: 50%;
         border-bottom: 2px solid #0065FC;
         border-top: none;
         padding-bottom: 20px;
     }
-
 
     .sign_up
     {
